@@ -1,0 +1,99 @@
+body {
+  font-family: "Dongle", sans-serif;
+  /* font-family: "Gothic A1", sans-serif; */
+  font-size: 18px;
+}
+
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  border-bottom: 1px solid #a9a7a7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.header h1 {
+  font-size: 48px;
+}
+
+.header h2.blog-title {
+  font-size: 48px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+}
+
+.content {
+  width: 900px;
+}
+
+.post-list {
+  line-height: 1.2;
+}
+
+.post-list li {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #999;
+  margin-top: 15px;
+}
+
+.post-info {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  color: #666;
+}
+
+.post-date {
+  margin-right: 20px;
+}
+
+aside.left-nav {
+  width: 200px;
+  padding-top: 17px;
+  padding-right: 35px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+aside.left-nav ul.menu>li {
+  font-size: 25px;
+}
+
+.content {
+  padding-top: 17px;
+}
+
+.content h1 {
+  margin-bottom: 26px;
+}
+
+.post-detail {
+  font-size: 20px;
+  line-height: 1.4;
+}
