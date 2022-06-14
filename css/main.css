@@ -1,14 +1,17 @@
-body {
-  font-family: "Dongle", sans-serif;
-  /* font-family: "Gothic A1", sans-serif; */
-  font-size: 18px;
+body,
+button,
+select {
+    font-family: "Noto Sans KR", sans-serif;
+    /* font-family: "Gothic A1", sans-serif; */
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 .header {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 20px 10px;
-  border-bottom: 1px solid #a9a7a7;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    border-bottom: 1px solid #a9a7a7;
 }
 
 h1,
@@ -17,83 +20,106 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 .header h1 {
-  font-size: 48px;
+    font-size: 48px;
 }
 
 .header h2.blog-title {
-  font-size: 48px;
+    font-size: 48px;
 }
 
 h1 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 h2 {
-  font-size: 30px;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
 }
 
 a {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 30px;
-  display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
 }
 
 .content {
-  width: 900px;
+    width: 900px;
 }
 
 .post-list {
-  line-height: 1.2;
+    line-height: 1.6;
 }
 
 .post-list li {
-  padding-bottom: 15px;
-  border-bottom: 1px solid #999;
-  margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #999;
+    margin-top: 15px;
 }
 
 .post-info {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 18px;
-  color: #666;
+    display: flex;
+    justify-content: flex-end;
+    color: #666;
 }
 
 .post-date {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 aside.left-nav {
-  width: 200px;
-  padding-top: 17px;
-  padding-right: 35px;
-  box-sizing: border-box;
-  text-align: right;
+    width: 200px;
+    padding-top: 17px;
+    padding-right: 35px;
+    box-sizing: border-box;
+    text-align: right;
 }
 
-aside.left-nav ul.menu>li {
-  font-size: 25px;
+aside.left-nav ul.menu > li {
+    font-size: 25px;
 }
 
 .content {
-  padding-top: 17px;
+    padding-top: 17px;
 }
 
 .content h1 {
-  margin-bottom: 26px;
+    margin-bottom: 26px;
 }
 
 .post-detail {
-  font-size: 20px;
-  line-height: 1.4;
+}
+
+.post-detail h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+button {
+    border: 0;
+    background-color: rgb(17, 72, 183);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(104, 128, 174);
 }
