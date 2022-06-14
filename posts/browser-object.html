@@ -121,7 +121,7 @@
 
                 <div class="mb-3">
                     <h3>스크롤 / 대화상자</h3>
-                    <button onclick="window.scrollTo({ left: 0, top: 300, behavior: 'smooth' })">scrollTo</button>
+                    <button onclick="window.scrollTo({ left: 0, top: 300 })">scrollTo</button>
                     <button onclick="window.alert('알림창을 띄워줍니다')">alert</button>
                     <button
                         onclick="window.confirm('사용자에게 O/X를 선택하게 할 수 있습니다') && alert('확인 버튼을 누르셨습니다')"
@@ -160,7 +160,7 @@
                 <div class="mb-3">
                     <h3>LocalStorage</h3>
                     <button onclick="window.localStorage.setItem('name2', '홍길동')">로컬 스토리지 값 설정</button>
-                    <button onclick="window.localStorage.getItem('item2')">값 가져오기</button>
+                    <button onclick="alert(window.localStorage.getItem('name2'))">값 가져오기</button>
                 </div>
 
                 <div class="post-detail">

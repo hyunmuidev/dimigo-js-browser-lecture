@@ -15,11 +15,22 @@
 
         <script>
             window.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("userId").value = "Martin";
                 console.log("DOM 로드가 완료되었습니다");
             });
+            // jquery
+            // $(document).ready(function () {});
+            // $(function () {});
 
             function changeGender(element) {
                 alert("바뀐 성별: " + element.value);
+            }
+
+            function onlyLetters(event) {
+                console.log(event.keyCode);
+                if (event.keyCode >= 48 && event.keyCode <= 57) {
+                    event.preventDefault();
+                }
             }
         </script>
     </head>
@@ -37,6 +48,7 @@
                             class="form-control"
                             placeholder=""
                             aria-describedby="helpUserId"
+                            onkeydown="onlyLetters(event)"
                         />
                         <small id="helpUserId" class="text-muted">아이디를 입력해주세요</small>
                     </div>
@@ -60,8 +72,6 @@
                         </select>
                     </div>
                     <button class="btn btn-primary btn-lg">가입하기</button>
-                    <button class="btn btn-primary btn-lg">임시저장(cookie)</button>
-                    <button class="btn btn-primary btn-lg">임시저장(localStorage)</button>
                 </form>
             </div>
 
@@ -71,7 +81,6 @@
             </div>
         </div>
 
-        <!-- 고급 -->
         <script>
             document.querySelector("form").addEventListener("submit", function (e) {
                 // TODO: 사용자 계정과 암호를 점검하고, 한개라도 비어있으면 경고창을 띄워본다
@@ -79,15 +88,16 @@
                 e.preventDefault();
             });
 
+            // 고급
             // stopPropagation 테스트
-            // document.querySelector("#bubblingTest").addEventListener("click", function (event) {
-            //     alert("버튼 클릭됨");
-            //     // event.stopPropagation();
-            // });
+            document.querySelector("#bubblingTest").addEventListener("click", function (event) {
+                alert("버튼 클릭됨");
+                event.stopPropagation();
+            });
 
-            // document.addEventListener("click", function () {
-            //     alert("문서 클릭됨");
-            // });
+            document.addEventListener("click", function () {
+                alert("문서 클릭됨");
+            });
         </script>
     </body>
 </html>
