@@ -14,6 +14,8 @@
         />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/main.css" />
+
+        <script src="/js/menu.js"></script>
     </head>
 
     <body>
@@ -24,9 +26,9 @@
             <aside class="left-nav">
                 <nav>
                     <ul class="menu">
-                        <li><a href="monthly.html">2022-04 (2)</a></li>
+                        <!-- <li><a href="/monthly.html">2022-04 (2)</a></li>
                         <li><a href="monthly.html">2022-05 (2)</a></li>
-                        <li><a href="monthly.html">2022-06 (1)</a></li>
+                        <li><a href="monthly.html">2022-06 (1)</a></li> -->
                     </ul>
                 </nav>
             </aside>
@@ -137,15 +139,15 @@
         </div>
         <!-- AJAX -->
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                fetch("/posts/list.json")
-                    .then((response) => response.json())
-                    .then((data) => {
-                        console.log(data);
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     fetch("/posts/list.json")
+            //         .then((response) => response.json())
+            //         .then((data) => {
+            //             console.log(data);
 
-                        // TODO: @list에 출력되도록 변경해보기
-                    });
-            });
+            //             // TODO: @list에 출력되도록 변경해보기
+            //         });
+            // });
         </script>
     </body>
 </html>
